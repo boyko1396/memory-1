@@ -54,18 +54,6 @@
 }
 
 @media (max-width: 1199px) {
-    :root {
-        --font-size-default: 14px;
-        --font-title-size-1: 25px;
-        --font-title-size-2: 25px;
-        --font-title-size-3: 25px;
-        --font-title-size-4: 16px;
-
-        --gap: 5px;
-        --gap-: -5px;
-        --gap2: 10px;
-        --gap2-: -10px;
-    }
     .container {
         padding-right: calc(2 * var(--gap2));
         padding-left: calc(2 * var(--gap2));
@@ -370,6 +358,21 @@
 }
 
 @media (max-width: 767px) {
+    :root {
+        --font-size-default: 14px;
+        --font-title-size-1: 25px;
+        --font-title-size-2: 25px;
+        --font-title-size-3: 25px;
+        --font-title-size-4: 16px;
+
+        --gap: 5px;
+        --gap-: -5px;
+        --gap2: 10px;
+        --gap2-: -10px;
+    }
+    .intro__title {
+        font-size: 35px;
+    }
     .gallery-list__col:nth-child(2) {
         margin-bottom: 0;
     }
@@ -396,4 +399,7 @@
 }
 
 @media (max-width: 420px) {
+    .intro__title {
+        font-size: 25px;
+    }
 }

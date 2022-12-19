@@ -16,6 +16,13 @@ const swiper = new Swiper('.js-epitaphs-slider', {
   effect: 'fade'
 });
 
+// load moore gallery
+var loadBtn = document.querySelector('.js-btn-moore');
+
+loadBtn.addEventListener('click', function() {
+  loadBtn.classList.toggle('is-active');
+});
+
 // modal share init
 var modalBtn = document.querySelector('.js-btn-modal-share');
 var modalBtnClose = document.querySelector('.js-btn-modal-share-close');
