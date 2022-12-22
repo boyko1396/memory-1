@@ -16,11 +16,13 @@ const swiper = new Swiper('.js-epitaphs-slider', {
   effect: 'fade'
 });
 
-// load moore gallery
+// load moore gallery-list
 var loadBtn = document.querySelector('.js-btn-moore');
+var loadContainer = document.querySelector('.gallery-list__card.is-hide');
 
 loadBtn.addEventListener('click', function() {
-  loadBtn.classList.toggle('is-active');
+  loadBtn.classList.toggle('is-hide');
+  loadContainer.classList.remove('is-hide');
 });
 
 // modal share init
